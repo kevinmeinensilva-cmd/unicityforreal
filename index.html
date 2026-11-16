@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>UniCity Hotel</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topo ">
+        <div class="wrap"><a class="marca" href="index.html"><img src="logo.jpg" alt="">UniCity</a>
+            <button class="burger" aria-label="Abrir menu" aria-expanded="false">☰</button>
+            <nav aria-label="Principal"><a href="index.html#sobre">O hotel</a><a href="quartos.html">Quartos</a><a
+                    href="index.html#galeria">Galeria</a><a href="index.html#avaliacoes">Avaliações</a><a
+                    href="sobre.html">Sobre nós</a><a class="entrar" href="login.html">Entrar</a></nav>
+        </div>
+    </header>
+    <section class="hero"><img src="fachada.jpg" alt="Vista aérea do hotel UniCity com piscinas e praia ao fundo">
+        <div class="wrap">
+            <h1>Hospede-se com vista para o mar.</h1>
+            <p>Piscinas, café da manhã completo e suítes pensadas para o seu descanso.</p>
+            <form class="reserva" id="reserva"><label>Entrada<input type="date" id="entrada"></label><label>Saída<input
+                        type="date" id="saida"></label>
+                <label>Tipo de quarto<select id="tipo">
+                        <option value="">Escolha o tipo</option>
+                    </select></label>
+                <label>Hóspedes<select id="hospedes">
+                        <option>1 hóspede</option>
+                        <option selected>2 hóspedes</option>
+                        <option>3 hóspedes</option>
+                        <option>4 hóspedes</option>
+                    </select></label>
+                <button class="btn" type="submit">Ver disponibilidade</button>
+            </form>
+            <p id="aviso" role="status"></p>
+        </div>
+    </section>
+    <section class="sobre" id="sobre">
+        <div class="wrap">
+            <div>
+                <h2>Um hotel bem avaliado por hóspedes do mundo todo.</h2>
+                <p>O UniCity recebe visitantes de várias nacionalidades e cuida de cada detalhe: quartos silenciosos,
+                    café da manhã farto e três piscinas para todos os tamanhos de família.</p>
+                <div class="numeros">
+                    <div><b>3</b><span>piscinas</span></div>
+                    <div><b>6</b><span>tipos de quarto</span></div>
+                    <div><b>5,0</b><span>nota dos hóspedes</span></div>
+                </div>
+            </div>
+            <div class="fotos2"><img src="cafe.jpg" alt="Buffet do café da manhã" loading="lazy"><img
+                    src="banheiro.jpg" alt="Banheiro de uma suíte" loading="lazy"></div>
+        </div>
+    </section>
+    <section class="escuro" id="quartos">
+        <div class="wrap">
+            <div class="cab">
+                <h2>Escolha seu quarto</h2>
+                <p>Do quarto padrão às suítes VIP. Você escolhe o nível de conforto.</p>
+            </div>
+            <div class="grade" data-quartos></div>
+            <p style="margin-top:36px"><a class="btn claro" href="quartos.html">Ver todos os quartos</a></p>
+        </div>
+    </section>
+    <section id="galeria">
+        <div class="wrap">
+            <div class="cab">
+                <h2>Conheça o hotel por dentro</h2>
+            </div>
+            <div class="galeria">
+                <figure><img src="piscina.jpg" alt="Piscina redonda cercada de árvores">
+                    <figcaption>Piscinas</figcaption>
+                </figure>
+                <figure><img src="salao.jpg" alt="Salão do restaurante">
+                    <figcaption>Restaurante</figcaption>
+                </figure>
+                <figure><img src="piscina2.jpg" alt="Piscina com vegetação">
+                    <figcaption>Área externa</figcaption>
+                </figure>
+                <figure><img src="cafe.jpg" alt="Café da manhã">
+                    <figcaption>Café da manhã</figcaption>
+                </figure>
+                <figure><img src="banheiro.jpg" alt="Banheiro">
+                    <figcaption>Banheiros</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="escuro" id="avaliacoes">
+        <div class="wrap">
+            <div class="cab">
+                <h2>O que dizem os hóspedes</h2>
+            </div>
+            <div class="avals">
+                <div class="aval"><q>Hotel maravilhoso! Quartos silenciosos e confortáveis do jeito que eu
+                        gosto.</q><span>★★★★★</span><b>João Graça</b></div>
+                <div class="aval"><q>I loved the hotel; I will be back
+                        again.</q><span>★★★★★</span><b>Martim</b><small>Eu amei o hotel; voltarei novamente.</small>
+                </div>
+                <div class="aval"><q>Ambiente muito bonito, limpo e organizado. Recomendo!</q><span>★★★★★</span><b>Lucas
+                        Ferreira</b></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrap"><a class="marca" href="index.html"><img src="logo.jpg" alt="">UniCity</a>
+            <p>© 2026 UniCity Hotel. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Criar conta | UniCity</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="auth">
+        <div class="lado"><img src="premium.jpg" alt="">
+            <div>
+                <h2>Seu próximo descanso começa aqui.</h2>
+                <p>Reserve quartos e acompanhe suas estadias no UniCity.</p>
+            </div>
+        </div>
+        <main>
+            <form class="form" data-modo="cadastro"><a class="marca" href="index.html" style="color:var(--bordo)"><img
+                        src="logo.jpg" alt="">UniCity</a>
+                <h1>Criar conta</h1>
+                <p>Leva menos de um minuto.</p><label class="campo">Nome<input type="text" name="nome"
+                        autocomplete="name" placeholder="Seu nome completo" required></label><label
+                    class="campo">E-mail<input type="email" name="email" autocomplete="email"
+                        placeholder="voce@exemplo.com" required></label><label class="campo">Senha<input type="password"
+                        name="senha" autocomplete="new-password" placeholder="Crie uma senha" required></label><button
+                    class="btn" type="submit">Criar minha conta</button>
+                <p class="msg" role="status"></p>
+                <p class="troca">Já tem conta? <a href="login.html">Entrar</a></p>
+            </form>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

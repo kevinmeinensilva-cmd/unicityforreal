@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Quartos | UniCity</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topo fixo">
+        <div class="wrap"><a class="marca" href="index.html"><img src="logo.jpg" alt="">UniCity</a>
+            <button class="burger" aria-label="Abrir menu" aria-expanded="false">☰</button>
+            <nav aria-label="Principal"><a href="index.html#sobre">O hotel</a><a href="quartos.html">Quartos</a><a
+                    href="index.html#galeria">Galeria</a><a href="index.html#avaliacoes">Avaliações</a><a
+                    href="sobre.html">Sobre nós</a><a class="entrar" href="login.html">Entrar</a></nav>
+        </div>
+    </header>
+    <div class="titulo-pag">
+        <div class="wrap">
+            <h1 style="font-size:clamp(2.6rem,6vw,4.5rem)">Nossos quartos</h1>
+            <p>Padrão ou VIP, todos têm café da manhã e acesso às piscinas.</p>
+        </div>
+    </div>
+    <section>
+        <div class="wrap">
+            <div class="abas" role="group" aria-label="Filtrar quartos" style="margin-bottom:40px"><button
+                    data-f="todos" aria-pressed="true">Todos</button><button data-f="padrao"
+                    aria-pressed="false">Padrão</button><button data-f="vip" aria-pressed="false">VIP</button></div>
+            <div class="grade" data-quartos></div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrap"><a class="marca" href="index.html"><img src="logo.jpg" alt="">UniCity</a>
+            <p>© 2026 UniCity Hotel. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
